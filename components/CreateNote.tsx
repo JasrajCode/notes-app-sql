@@ -23,6 +23,7 @@ export default function CreateNote() {
       if (error) throw error;
 
       router.push("/");
+      router.refresh();
     } catch (error) {
       console.log(error);
     }

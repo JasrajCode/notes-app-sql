@@ -46,6 +46,7 @@ export default function EditNote({ id }: { id : number }) {
       if (error) throw error;
 
       router.push("/");
+      router.refresh();
     } catch (error) {
       console.log(error);
     }
